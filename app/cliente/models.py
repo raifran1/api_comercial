@@ -5,8 +5,8 @@ class Endereco(models.Model):
     bairro = models.CharField(max_length=100, verbose_name="Bairro")
     cidade = models.CharField(max_length=100, verbose_name='Cidade')
     uf = models.CharField(max_length=100, verbose_name='Estado')
-    latitude = models.PositiveIntegerField(verbose_name='Latitude')
-    longitude = models.PositiveIntegerField(verbose_name='Longitude')
+    latitude = models.IntegerField(verbose_name='Latitude')
+    longitude = models.IntegerField(verbose_name='Longitude')
 
     class Meta:
         verbose_name = "Endereço"

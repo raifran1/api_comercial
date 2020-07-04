@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'funcionario',
     'produto',
     'venda',
+
+    # bibliotecas
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
