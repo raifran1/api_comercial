@@ -9,9 +9,6 @@ class ClienteList(APIView):
     """
     Methods HTTP - GET ALL, POST OBJECT
     """
-    serializer_class = ClienteSerializer
-    queryset = Cliente.objects.all()
-
     def get(self, request, format=None):
         cliente = Cliente.objects.all()
         serializer = ClienteSerializer(cliente, many=True)
@@ -63,9 +60,6 @@ class EnderecoList(APIView):
     """
     Methods HTTP - GET ALL, POST OBJECT
     """
-    serializer_class = EnderecoSerializer
-    queryset = Endereco.objects.all()
-
     def get(self, request, format=None):
         endereco = Endereco.objects.all()
         serializer = EnderecoSerializer(endereco, many=True)
